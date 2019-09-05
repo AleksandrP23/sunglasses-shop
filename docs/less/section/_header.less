@@ -1,0 +1,168 @@
+.header {
+    &--p-0 {
+        padding: 0;
+    }
+
+    &--al-item {
+        align-items: center
+    }
+
+    &__phone a {
+        font-size: 12px;
+        color: #000;
+        letter-spacing: 1.6px;
+        text-decoration: none;
+    }
+
+    &__lang {
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            margin-right: 8px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: #777;
+
+                &:hover, &:focus {
+                    color: #000;
+                }
+                
+                &.active {
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    &__nav {
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 3.1px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-bottom: 45px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+    }
+}
+
+.logo {
+
+    &__name {
+        font-family: 'jaapokki_subtractregular';
+        font-size: 18px;
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2.4px;
+    }
+
+    &__slogan {
+        font-size: 9px;
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 4.8px;
+    }
+
+
+}
+
+.basket {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-total-price {
+    display: flex;
+
+    &__num {
+        font-size: 10px;
+        width: 20px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    &__sum {
+        font-size: 10px;
+        color: #000;
+        padding-left: 9px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}
+
+
+.header-browse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+        display: inline-block;
+        width: 780px;
+        margin-left: 91px;
+
+        p {
+            width: 471px;
+            font-size: 35px;
+            line-height: 2;
+            letter-spacing: 7.1px;
+            text-transform: uppercase;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            letter-spacing: 1.2px;
+            color: #000;
+            border: 2px solid #060606;
+            padding: 18px 33px;
+            text-transform: uppercase;
+
+        }
+    }
+    
+    &--mr-27 {
+        margin-right: 27px;
+    }
+}
+
+
+

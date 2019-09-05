@@ -1,0 +1,210 @@
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+html {
+  font-size: 10px;
+  line-height: 1.4;
+}
+body {
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+}
+p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+.header--p-0 {
+  padding: 0;
+}
+.header--al-item {
+  align-items: center;
+}
+.header__phone a {
+  font-size: 12px;
+  color: #000;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+}
+.header__lang {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.header__lang ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.header__lang li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-right: 8px;
+}
+.header__lang li:last-child {
+  padding-right: 0;
+}
+.header__lang li a {
+  text-decoration: none;
+  color: #777;
+}
+.header__lang li a:hover,
+.header__lang li a:focus {
+  color: #000;
+}
+.header__lang li a.active {
+  color: #000;
+}
+.header__nav {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 3.1px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+.header__nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.header__nav li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-right: 8px;
+}
+.header__nav a {
+  text-decoration: none;
+  color: #000;
+}
+.logo__name {
+  font-family: 'jaapokki_subtractregular';
+  font-size: 18px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2.4px;
+}
+.logo__slogan {
+  font-size: 9px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4.8px;
+}
+.basket {
+  display: flex;
+  justify-content: space-between;
+}
+.header-total-price {
+  display: flex;
+}
+.header-total-price__num {
+  font-size: 10px;
+  width: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+}
+.header-total-price__sum {
+  font-size: 10px;
+  color: #000;
+  padding-left: 9px;
+}
+.header-total-price__sum:first-child {
+  padding-left: 0;
+}
+.header-browse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-browse__title {
+  display: inline-block;
+  width: 780px;
+  margin-left: 91px;
+}
+.header-browse__title p {
+  width: 471px;
+  font-size: 35px;
+  line-height: 2;
+  letter-spacing: 7.1px;
+  text-transform: uppercase;
+}
+.header-browse__title a {
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: #000;
+  border: 2px solid #060606;
+  padding: 18px 33px;
+  text-transform: uppercase;
+}
+.header-browse--mr-27 {
+  margin-right: 27px;
+}
