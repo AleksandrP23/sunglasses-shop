@@ -1,4 +1,6 @@
 .header {
+    margin-top: 54px;
+
     &--p-0 {
         padding: 0;
     }
@@ -10,7 +12,7 @@
     &__phone a {
         font-size: 12px;
         color: #000;
-        letter-spacing: 1.6px;
+        letter-spacing: 2.4px;
         text-decoration: none;
     }
 
@@ -53,7 +55,7 @@
     &__nav {
         text-align: center;
         font-size: 14px;
-        letter-spacing: 3.1px;
+        letter-spacing: 6.16px;
         text-transform: uppercase;
         margin-top: 30px;
         margin-bottom: 45px;
@@ -68,7 +70,11 @@
             margin: 0;
             padding: 0;
             display: inline-block;
-            margin-right: 8px;
+            margin-right: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
 
         a {
@@ -87,7 +93,7 @@
         color: #000;
         text-transform: uppercase;
         text-align: center;
-        letter-spacing: 2.4px;
+        letter-spacing: 7.92px;
     }
 
     &__slogan {
@@ -95,7 +101,7 @@
         color: #000;
         text-transform: uppercase;
         text-align: center;
-        letter-spacing: 4.8px;
+        letter-spacing: 3.96px;
     }
 
 
@@ -103,11 +109,12 @@
 
 .basket {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .header-total-price {
     display: flex;
+    margin-left: 35px;
 
     &__num {
         font-size: 10px;
@@ -128,39 +135,56 @@
     }
 }
 
-
 .header-browse {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (min-width: 768px) {
+        flex-wrap: wrap;
+    }
 
     &__title {
         display: inline-block;
         width: 780px;
         margin-left: 91px;
 
+        @media (min-width: 768px) {
+            margin-left: 15px;
+            flex-grow: 1;
+            order: 1;
+        }
+
         p {
-            width: 471px;
+            width: 480px;
             font-size: 35px;
             line-height: 2;
-            letter-spacing: 7.1px;
+            letter-spacing: 8.75px;
             text-transform: uppercase;
+
+            @media (min-width: 768px) {
+                width: 100%;
+            }
         }
 
         a {
             text-decoration: none;
             font-size: 20px;
-            letter-spacing: 1.2px;
+            letter-spacing: 5px;
             color: #000;
             border: 2px solid #060606;
             padding: 18px 33px;
             text-transform: uppercase;
 
+            &:hover {
+                border: 2px solid #b5b5b5;
+                color: #b5b5b5;
+            }
         }
     }
     
-    &--mr-27 {
-        margin-right: 27px;
+    &--m-27 {
+        margin: 0 27px;
     }
 }
 
