@@ -1,5 +1,17 @@
 .header {
-    margin-top: 54px;
+    margin-top: 15px;
+
+    @media (min-width: 768px) {
+        margin-top: 30px;
+    }
+
+    @media (min-width: 992px) {
+        margin-top: 40px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 54px;
+    }
 
     &--p-0 {
         padding: 0;
@@ -9,17 +21,35 @@
         align-items: center
     }
 
+    &--order {
+        order: 1;
+
+        @media (min-width: 576px) {
+            order: 0;
+        }
+    }
+
     &__phone a {
         font-size: 12px;
         color: #000;
-        letter-spacing: 2.4px;
+        letter-spacing: 2px;
         text-decoration: none;
+        display: block;
+        text-align: center;
+
+        @media (min-width: 576px) {
+            letter-spacing: 2.4px;
+        }
     }
 
     &__lang {
         font-size: 10px;
-        letter-spacing: 2px;
+        letter-spacing: normal;
         text-transform: uppercase;
+
+        @media (min-width: 992px) {
+            letter-spacing: 2px;
+        }
 
         ul {
             margin: 0;
@@ -55,10 +85,26 @@
     &__nav {
         text-align: center;
         font-size: 14px;
-        letter-spacing: 6.16px;
+        letter-spacing: 4.16px;
         text-transform: uppercase;
-        margin-top: 30px;
-        margin-bottom: 45px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        
+
+        @media (min-width: 576px) {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            letter-spacing: 6.16px;
+        }
+
+        @media (min-width: 768px) {
+            margin-top: 30px;
+            margin-bottom: 35px;
+        }
+
+        @media (min-width: 992px) {
+            margin-bottom: 45px;
+        }
 
         ul {
             margin: 0;
@@ -81,7 +127,6 @@
             text-decoration: none;
             color: #000;
         }
-
     }
 }
 
@@ -89,12 +134,18 @@
 
     &__name {
         font-family: 'jaapokki_subtractregular';
-        font-size: 18px;
+        font-size: 14px;
         color: #000;
         text-transform: uppercase;
         text-align: center;
-        letter-spacing: 7.92px;
+        letter-spacing: 6.8px;
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+            letter-spacing: 7.92px;
+        }
     }
+    
 
     &__slogan {
         font-size: 9px;
@@ -103,18 +154,21 @@
         text-align: center;
         letter-spacing: 3.96px;
     }
-
-
 }
 
 .basket {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 .header-total-price {
     display: flex;
-    margin-left: 35px;
+    margin-left: 5px;
+
+    @media (min-width: 768px) {
+        margin-left: 35px;
+    }
 
     &__num {
         font-size: 10px;
@@ -140,55 +194,90 @@
     align-items: center;
     justify-content: space-between;
 
-    @media (min-width: 768px) {
-        flex-wrap: wrap;
-    }
+    .img {
+        display: none;
 
-    @media (min-width: 1300px) {
-        flex-wrap: nowrap;
+        @media (min-width: 576px) {
+            display: block;
+        }
     }
 
     &__title {
         display: inline-block;
-        width: 780px;
-        
+        width: 550px;
+        margin-left: 20px;
 
         @media (min-width: 768px) {
-            margin-left: 15px;
-            flex-grow: 1;
-            order: 1;
+            width: 700px;
+            
         }
 
-        @media (min-width: 1300px) {
+        @media (min-width: 992px) {
+            margin-left: 40px;
+        }
+
+        @media (min-width: 1200px) {
+            margin-left: 70px;
+        }
+
+        @media (min-width: 1400px) {
             margin-left: 91px;
-            flex-grow: 0;
-            order: 0;
         }
 
         p {
-           
-            font-size: 35px;
-            line-height: 2;
-            letter-spacing: 8.75px;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 5px;
+            margin-bottom: 25px;
             text-transform: uppercase;
 
+
             @media (min-width: 768px) {
-                width: 100%;
+                font-size: 20px;
+                margin-bottom: 45px;
+            }
+
+            @media (min-width: 992px) {
+                font-size: 24px;
+                line-height: 1.6;
+                letter-spacing: 7px; 
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 30px;
+                line-height: 1.8;
             }
 
             @media (min-width: 1300px) {
-                 width: 480px;
+                font-size: 35px;
+                line-height: 2;
+                letter-spacing: 8.75px;
             }
         }
 
         a {
             text-decoration: none;
-            font-size: 20px;
+            padding: 10px 25px;
             letter-spacing: 5px;
             color: #000;
             border: 2px solid #060606;
-            padding: 18px 33px;
+            
             text-transform: uppercase;
+
+            @media (min-width: 576px) {
+                font-size: 12px;
+                
+            }
+            
+            @media (min-width: 768px) {
+                font-size: 16px;
+                padding: 14px 29px;
+            }
+
+            @media (min-width: 992px) {
+                font-size: 20px;
+                padding: 18px 33px;
+            }
 
             &:hover {
                 border: 2px solid #b5b5b5;
@@ -197,8 +286,16 @@
         }
     }
     
-    &--m-27 {
+    &--margin {
         margin: 0 27px;
+
+        @media (min-width: 576px) {
+            margin: 0 10px;
+        }
+
+        @media (min-width: 992px) {
+            margin: 0 15px;
+        }
     }
 }
 

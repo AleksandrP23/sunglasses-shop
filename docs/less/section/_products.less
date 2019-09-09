@@ -1,12 +1,25 @@
-.products__filter {
+.products-filter {
     font-family: 'jaapokki_subtractregular';
     font-size: 36px;
-    
     letter-spacing: 12.2px;
     text-transform: uppercase;
+    text-align: center;
+
     margin: 100px auto 0;
     padding: 0;
     list-style-type: none;
+
+    @media (min-width: 576px) {
+        
+    }
+
+    @media (min-width: 768px) {
+       
+    }
+
+    @media (min-width: 992px) {
+        
+    }
 
     li {
         margin: 0;
@@ -16,23 +29,61 @@
         padding: 63px 43px;
     }
 
-    a {
+    &__gender {
         text-decoration: none;
         color: #ccc;
         position: relative;
 
         &::before {
-            content: "men";
+            content: "0";
+            display: block;
             position: absolute;
             width: 50px;
             height: 50px;
-            top: 0;
-            left: 0;
+            top: 30%;
+            left: 27%;
             color: #000;
             font-family: "Roboto";
             font-size: 14px;
-
+            letter-spacing: 6.16px;
         }
+
+        &--men:before {
+            content: "men";
+        }
+        &--women:before {
+            content: "women";
+        }
+        &--kids:before {
+            content: "kids";
+        }
+        
+    }
+}
+
+.product__title {
+    font-family: 'Roboto';
+    font-size: 34px;
+    letter-spacing: 8.5px;
+    line-height: 1.76;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 90px;
+}
+
+.products-card {
+    text-align: center;
+
+    &__name {
+        font-size: 14px;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+        padding: 10px 0;
     }
 
+    &__price {
+        font-size: 12px;
+        letter-spacing: 2.37px;
+    }
 }
+
