@@ -1,24 +1,16 @@
 .header {
-    margin-top: 15px;
+    padding-top: 15px;
 
     @media (min-width: 768px) {
-        margin-top: 30px;
+        padding-top: 30px;
     }
 
     @media (min-width: 992px) {
-        margin-top: 40px;
+        padding-top: 40px;
     }
 
     @media (min-width: 1200px) {
-        margin-top: 54px;
-    }
-
-    &--p-0 {
-        padding: 0;
-    }
-
-    &--al-item {
-        align-items: center
+        padding-top: 55px;
     }
 
     &--order {
@@ -42,45 +34,7 @@
         }
     }
 
-    &__lang {
-        font-size: 10px;
-        letter-spacing: normal;
-        text-transform: uppercase;
-
-        @media (min-width: 992px) {
-            letter-spacing: 2px;
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        }
-
-        li {
-            margin: 0;
-            padding: 0;
-            display: inline-block;
-            margin-right: 8px;
-
-            &:last-child {
-                padding-right: 0;
-            }
-
-            a {
-                text-decoration: none;
-                color: #777;
-
-                &:hover, &:focus {
-                    color: #000;
-                }
-                
-                &.active {
-                    color: #000;
-                }
-            }
-        }
-    }
+    
 
     &__nav {
         text-align: center;
@@ -130,36 +84,72 @@
     }
 }
 
-.logo {
+.logo-name {
+    font-family: 'jaapokki_subtractregular';
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 6.8px;
 
-    &__name {
-        font-family: 'jaapokki_subtractregular';
-        font-size: 14px;
-        color: #000;
-        text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 6.8px;
-
-        @media (min-width: 768px) {
-            font-size: 18px;
-            letter-spacing: 7.92px;
-        }
-    }
-    
-
-    &__slogan {
-        font-size: 9px;
-        color: #000;
-        text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 3.96px;
+    @media (min-width: 768px) {
+        font-size: 18px;
+        letter-spacing: 7.92px;
     }
 }
 
-.basket {
+.logo-slogan {
+    font-size: 9px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3.96px;
+}
+
+.header-rigth {
     display: flex;
     justify-content: center;
     padding-top: 10px;
+
+    &__lang {
+        font-size: 10px;
+        letter-spacing: normal;
+        text-transform: uppercase;
+
+        @media (min-width: 992px) {
+            letter-spacing: 2px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            margin-right: 8px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: #777;
+
+                &:hover, &:focus {
+                    color: #000;
+                }
+                
+                &.active {
+                    color: #000;
+                }
+            }
+        }
+    }
 }
 
 .header-total-price {
@@ -167,6 +157,10 @@
     margin-left: 5px;
 
     @media (min-width: 768px) {
+        margin-left: 25px;
+    }
+
+    @media (min-width: 992px) {
         margin-left: 35px;
     }
 
@@ -189,7 +183,7 @@
     }
 }
 
-.header-browse {
+.promo {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -202,90 +196,6 @@
         }
     }
 
-    &__title {
-        display: inline-block;
-        width: 550px;
-        margin-left: 20px;
-
-        @media (min-width: 768px) {
-            width: 700px;
-            
-        }
-
-        @media (min-width: 992px) {
-            margin-left: 40px;
-        }
-
-        @media (min-width: 1200px) {
-            margin-left: 70px;
-        }
-
-        @media (min-width: 1400px) {
-            margin-left: 91px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 5px;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-
-
-            @media (min-width: 768px) {
-                font-size: 20px;
-                margin-bottom: 45px;
-            }
-
-            @media (min-width: 992px) {
-                font-size: 24px;
-                line-height: 1.6;
-                letter-spacing: 7px; 
-            }
-
-            @media (min-width: 1200px) {
-                font-size: 30px;
-                line-height: 1.8;
-            }
-
-            @media (min-width: 1300px) {
-                font-size: 35px;
-                line-height: 2;
-                letter-spacing: 8.75px;
-            }
-        }
-
-        a {
-            text-decoration: none;
-            padding: 10px 25px;
-            letter-spacing: 5px;
-            color: #000;
-            border: 2px solid #060606;
-            
-            text-transform: uppercase;
-
-            @media (min-width: 576px) {
-                font-size: 12px;
-                
-            }
-            
-            @media (min-width: 768px) {
-                font-size: 16px;
-                padding: 14px 29px;
-            }
-
-            @media (min-width: 992px) {
-                font-size: 20px;
-                padding: 18px 33px;
-            }
-
-            &:hover {
-                border: 2px solid #b5b5b5;
-                color: #b5b5b5;
-            }
-        }
-    }
-    
     &--margin {
         margin: 0 27px;
 
@@ -297,7 +207,89 @@
             margin: 0 15px;
         }
     }
+
+    &__btn {
+        text-decoration: none;
+        padding: 10px 25px;
+        letter-spacing: 5px;
+        color: #000;
+        border: 2px solid #060606;
+        
+        text-transform: uppercase;
+
+        @media (min-width: 576px) {
+            font-size: 12px;
+        }
+        
+        @media (min-width: 768px) {
+            font-size: 16px;
+            padding: 14px 29px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 20px;
+            padding: 18px 33px;
+        }
+
+        &:hover {
+            border: 2px solid #b5b5b5;
+            color: #b5b5b5;
+        }
+    }
 }
 
+.promo-disc {
+    display: inline-block;
+    width: 550px;
+    margin-left: 20px;
+
+    @media (min-width: 768px) {
+        width: 700px;
+        
+    }
+
+    @media (min-width: 992px) {
+        margin-left: 40px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-left: 70px;
+    }
+
+    @media (min-width: 1400px) {
+        margin-left: 91px;
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 5px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+
+
+        @media (min-width: 768px) {
+            font-size: 20px;
+            margin-bottom: 45px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 24px;
+            line-height: 1.6;
+            letter-spacing: 7px; 
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 30px;
+            line-height: 1.8;
+        }
+
+        @media (min-width: 1300px) {
+            font-size: 35px;
+            line-height: 2;
+            letter-spacing: 8.75px;
+        }
+    }
+}
 
 
