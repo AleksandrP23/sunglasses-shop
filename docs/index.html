@@ -28,6 +28,10 @@
     <link rel="shortcut icon" href="img/favicons/favicon-64.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="img/favicons/favicon-256.png">
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -82,7 +86,7 @@
             <div class="img"><img src="img/header-01.jpg" alt="Фото-1"></div>
             <div class="promo-disc">
                 <p class="promo-disc__title">sunglasses <br> that you`ll never take off</p>
-                <a class="promo__btn" href="#">browse</a>
+                <a class="btn" href="#">browse</a>
             </div>
             <div class="img promo--margin"><img src="img/header-02.jpg"  alt="Фото-2"></div>
             <div class="img"><img src="img/header-03.jpg" alt="Фото-3"></div>
@@ -96,96 +100,177 @@
                     <ul class="products-filter__block">
                         <li class="products-filter__element">
                             <a data-name="men" class="products-filter__button 
-                            products-filter__button--active">Men</a>
+                            products-filter__button--active filter" data-filter=".men">Men</a>
                         </li>
                         <li class="products-filter__element">
-                            <a data-name="women" class="products-filter__button">Women</a>
+                            <a data-name="women" class="products-filter__button filter" data-filter=".women">Women</a>
                         </li>
                         <li class="products-filter__element">
-                            <a data-name="kids" class="products-filter__button">Kids</a>
+                            <a data-name="kids" class="products-filter__button filter" data-filter=".kids">Kids</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <h2 class="product__title">just arrived</h2>
-            <div class="row">
-                <div class="col-sm-4 col-md-3">
-                    <div data-name="Ray-Ban" class="products-card products-card--active">
+            <h2 class="title">just arrived</h2>
+            <div id="products-sunglasses" class="row">
+                <div class="col-sm-4 col-md-3 mix women kids">
+                    <div data-name="Ray-Ban" class="products-card ">
                         <img src="img/sunglass-01.png" alt="Очки-01">
                         <div class="products-card__name">Marta</div>
                         <div class="products-card__price">$158</div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-3">
+                <div class="col-sm-4 col-md-3 mix kids">
                     <div data-name="Ray-Ban" class="products-card">
                         <img src="img/sunglass-02.png" alt="Очки-02">
                         <div class="products-card__name">Serengeti</div>
                         <div class="products-card__price">$210</div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-3">
+                <div class="col-sm-4 col-md-3 mix women">
                     <div data-name="Ray-Ban" class="products-card">
                         <img src="img/sunglass-03.png" alt="Очки-03">
                         <div class="products-card__name">Versace</div>
                         <div class="products-card__price">$167</div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-3">
+                <div class="col-sm-4 col-md-3 mix men">
                     <div data-name="Ray-Ban" class="products-card">
                         <img src="img/sunglass-04.png" alt="Очки-04">
                         <div class="products-card__name">Emporio</div>
                         <div class="products-card__price">$204</div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-3">
-                        <div data-name="Ray-Ban" class="products-card">
-                            <img src="img/sunglass-01.png" alt="Очки-01">
-                            <div class="products-card__name">Marta</div>
-                            <div class="products-card__price">$158</div>
-                        </div>
+                <div class="col-sm-4 col-md-3 mix women">
+                    <div data-name="Ray-Ban" class="products-card">
+                        <img src="img/sunglass-01.png" alt="Очки-01">
+                        <div class="products-card__name">Marta</div>
+                        <div class="products-card__price">$158</div>
                     </div>
-                    <div class="col-sm-4 col-md-3">
-                        <div data-name="Ray-Ban" class="products-card">
-                            <img src="img/sunglass-02.png" alt="Очки-02">
-                            <div class="products-card__name">Serengeti</div>
-                            <div class="products-card__price">$210</div>
-                        </div>
+                </div>
+                <div class="col-sm-4 col-md-3 mix kids">
+                    <div data-name="Ray-Ban" class="products-card">
+                        <img src="img/sunglass-02.png" alt="Очки-02">
+                        <div class="products-card__name">Serengeti</div>
+                        <div class="products-card__price">$210</div>
                     </div>
-                    <div class="col-sm-4 col-md-3">
-                        <div data-name="Ray-Ban" class="products-card">
-                            <img src="img/sunglass-03.png" alt="Очки-03">
-                            <div class="products-card__name">Versace</div>
-                            <div class="products-card__price">$167</div>
-                        </div>
+                </div>
+                <div class="col-sm-4 col-md-3 mix kids">
+                    <div data-name="Ray-Ban" class="products-card">
+                        <img src="img/sunglass-03.png" alt="Очки-03">
+                        <div class="products-card__name">Versace</div>
+                        <div class="products-card__price">$167</div>
                     </div>
-                    <div class="col-sm-4 col-md-3">
-                        <div data-name="Ray-Ban" class="products-card">
-                            <img src="img/sunglass-04.png" alt="Очки-04">
-                            <div class="products-card__name">Emporio</div>
-                            <div class="products-card__price">$204</div>
-                        </div>
+                </div>
+                <div class="col-sm-4 col-md-3 mix men">
+                    <div data-name="Ray-Ban" class="products-card ">
+                        <img src="img/sunglass-04.png" alt="Очки-04">
+                        <div class="products-card__name">Emporio</div>
+                        <div class="products-card__price">$204</div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="about">
-        <div class="contaier">
-            <h3 class="about__title">why they choose us</h3>
+        <div class="container">
+            <h3 class="title">why they choose us</h3>
             <p>
                 Delivery and returns are free at Sunglasses Shop. You can also enjoy the 30-day returns,
                 giving you a whole month to decide on your purchase. Orders over are sent using. 
-                If you order before 3pm we'll aim to send it the same day.
+                <br>If you order before 3pm we'll aim to send it the same day.
             </p>
         </div>
     </div>
 
+    <div class="slider">
+        <div id="top-slider" class="owl-carousel">
+            <div class="slider__block">
+                <div class="slider__title">Care</div>        
+                <div class="slider__slogan">We care about <br> every single customer</div>
+            </div>
+            <div class="slider__block">
+                <div class="slider__title">Care</div>        
+                <div class="slider__slogan">We care about <br> every single customer</div>
+            </div>
+            <div class="slider__block">
+                <div class="slider__title">Care</div>        
+                <div class="slider__slogan">We care about <br> every single customer</div>
+            </div>
+        </div>
 
+        <a class="btn btn--margin" href="#">start shoopping</a>
+        
+    </div>
 
-
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3"> 
+                    <div class="logo-name">sunglasses</div>
+                    <div class="logo-slogan">online shope</div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="col-md-4"> 
+                            <div class="footer-title">Men</div>
+                            <ul class="footer-list">
+                                <li><a href="#">Ray-Ban</a></li>
+                                <li><a href="#">Chanel</a></li>
+                                <li><a href="#">Oakley</a></li>
+                                <li><a href="#">Police</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-title">Women</div>
+                            <ul class="footer-list">
+                                <li><a href="#">Police</a></li>
+                                <li><a href="#">Celine</a></li>
+                                <li><a href="#">Polaroid</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-title">Kids</div>
+                            <ul class="footer-list">
+                                <li><a href="#">Police</a></li>
+                                <li><a href="#">Celine</a></li>
+                                <li><a href="#">Polaroid</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="right-title">CONTACT US</div>
+                        <ul class="right-title__list">
+                            <li>
+                                <div class="right-title__desc">
+                                    <p><a href="tel:+44(0)1793746546">+44 (0)1793 746546</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="right-title__desc">
+                                    <p>freephone ( the UK only ) <a href="tel:08001488070">0800 148 8070</a></p>
+                                </div>
+                            </li>
+                            <li> 
+                                <div class="right-title__desc">
+                                    <p><a href="mailto:ask@sunglassesshop.com">ask@sunglassesshop.com</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    <div class="right-title__text">Enter you E-mail</div>
+                    <input type="text" class="right-title__input" name="email">
+                    <input type="submit" class="right-title__btn" name="btn">
+                    </div>	
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

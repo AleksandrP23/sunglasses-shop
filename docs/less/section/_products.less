@@ -1,5 +1,6 @@
 .products {
     margin-top: 50px;
+    
 
     @media (min-width: 768px) {
         margin-top: 75px;  
@@ -7,6 +8,7 @@
  
      @media (min-width: 1200px) {
         margin-top: 100px;
+        margin-bottom: 80px;
      }
 }
 
@@ -43,7 +45,6 @@
     }
 
     &__block {
-        margin: 0;
         padding: 0;
         list-style-type: none;
         text-align: center;
@@ -126,15 +127,6 @@
     }
 }
 
-.product__title {
-    font-family: 'Roboto';
-    font-size: 34px;
-    letter-spacing: 8.5px;
-    line-height: 1.76;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 .products-card {
     text-align: center;
     cursor: pointer;
@@ -148,7 +140,7 @@
         padding: 50px 25px 30px;
     }
 
-    &--active {
+    &:hover {
         padding: 15px 24px 15px 36px;
         transition: all 0.3s ease-in;
         border: 1px solid #b5b5b5;
