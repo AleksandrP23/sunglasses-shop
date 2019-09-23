@@ -39,144 +39,159 @@
         text-transform: uppercase;
         text-align: center;
 
-        margin: 100px auto 0;
+        margin: 0 auto;
         padding: 0;
         list-style-type: none;
     }
+}
 
-    &__block {
-        padding: 0;
-        list-style-type: none;
-        text-align: center;
-    }
+.products-filter__block {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
 
-    &__element {
-        margin: 0 0 9px;
-        padding: 0;
-        display: block;
+.products-filter__element {
+    margin: 0 0 9px;
+    padding: 0;
+    display: block;
 
-        @media (min-width: 576px) {
-            margin: 0px;
-            display: inline-block;
-        }
-
-        @media (min-width: 1200px) {
-            margin-right: 15px;
-            
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
-
-    &__button {
+    @media (min-width: 576px) {
+        margin: 0px;
         display: inline-block;
-        color: #cecece;
-        cursor: pointer;
-        padding: 10px 24px 10px 36px;
-        border: 1px solid #fff;
-        transition: all 0.3s ease-in;
-        color: #ccc;
-        position: relative;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 15px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.products-filter__button {
+    display: inline-block;
+    color: #cecece;
+    cursor: pointer;
+    padding: 10px 24px 10px 36px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-in;
+    color: #ccc;
+    position: relative;
+    margin: 0;
+
+    &:hover {
+        border: 1px solid #b5b5b5;
+    }
+    &:focus {
+        outline: none;
+    }
+
+    &::before {
+        content: attr(data-name);
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #000;
+        font-family: "Roboto";
+        font-size: 10px;
+        letter-spacing: 6.16px;
+        transform: translate(-50%, -50%);
         margin: 0;
-
-        &:hover {
-            border: 1px solid #b5b5b5;
-        }
-        &:focus {
-            outline: none;
-        }
-
-        &::before {
-            content: attr(data-name);
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            color: #000;
-            font-family: "Roboto";
-            font-size: 10px;
-            letter-spacing: 6.16px;
-            transform: translate(-50%, -50%);
-            margin: 0;
-            padding: 0;
-
-            @media (min-width: 768px) {
-                font-size: 12px;
-            }
-
-            @media (min-width: 992px) {
-                font-size: 14px;
-            }
-        }
+        padding: 0;
 
         @media (min-width: 768px) {
-            display: inline-block;
-            padding: 60px 40px;
+            font-size: 12px;
+            display: block;
         }
 
-        &--active {
-            padding: 10px 24px 10px 36px;
-            transition: all 0.3s ease-in;
-            border: 1px solid #b5b5b5;
+        @media (min-width: 992px) {
+            font-size: 14px;
+        }
+    }
 
-            @media (min-width: 768px) {
-                padding: 60px 40px;
-            }
+    @media (min-width: 768px) {
+        display: inline-block;
+        padding: 60px 40px;
+    }
+
+    &--active {
+        padding: 10px 24px 10px 36px;
+        transition: all 0.3s ease-in;
+        border: 1px solid #b5b5b5;
+
+        @media (min-width: 768px) {
+            padding: 60px 40px;
         }
     }
 }
 
 .products-card {
+    position: relative;
     text-align: center;
     cursor: pointer;
     padding: 15px 24px 15px 36px;
     border: 1px solid #fff;
     transition: all 0.3s ease-in;
     margin-bottom: 30px;
-    position: relative;
 
     @media (min-width: 768px) {
         padding: 50px 25px 30px;
     }
 
     &:hover {
-        padding: 15px 24px 15px 36px;
+        display: block;
+        color: #595959;
+        font-family: "Roboto";
+
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
         transition: all 0.3s ease-in;
         border: 1px solid #b5b5b5;
-
-        &::before {
-            content: attr(data-name);
-            display: block;
-            position: absolute;
-            top: 0%;
-            left: 50%;
-            color: #595959;
-            font-family: "Roboto";
-            font-size: 10px;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-            transform: translate(-50%, -50%);
-            margin: 0;
-            padding: 0 7px;
-            background-color: #fff;
-            z-index: 1;
-        }
+        padding: 15px 24px 15px 36px;
 
         @media (min-width: 768px) {
             padding: 50px 25px 30px;
         }
     }
 
-    &__name {
-        font-size: 14px;
-        letter-spacing: 3.5px;
-        text-transform: uppercase;
-        padding: 10px 0;
+    &:hover .product-card__brand{
+        display: block;
+        transition: all 0.3s ease-in;
     }
+}
 
-    &__price {
-        font-size: 12px;
-        letter-spacing: 2.37px;
-    }
+.products-card__name {
+    font-size: 14px;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.products-card__price {
+    font-size: 12px;
+    letter-spacing: 2.37px;
+}
+
+.product-card__brand {   
+    display: none;
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    color: #595959;
+    font-family: "Roboto";
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+    padding: 0 7px;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+}
+
+#products-sunglasses .mix {
+    display: none;
+    text-align: left;
 }

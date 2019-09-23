@@ -13,9 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Syles -->
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+    <!-- Syles -->   
     <link rel="stylesheet" href="libs/normalize/normalize.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Fonts -->
@@ -82,14 +82,19 @@
                 </ul>
             </div>
         </div>
-        <div class="promo">
-            <div class="img"><img src="img/header-01.jpg" alt="Фото-1"></div>
-            <div class="promo-disc">
-                <p class="promo-disc__title">sunglasses <br> that you`ll never take off</p>
-                <a class="btn" href="#">browse</a>
+
+        <div class="header-promo">
+            <div class="container container-promo">
+                <div class="header-promo__img-before"><img src="img/header-01.jpg" alt="Фото-1"></div>
+        
+                <div class="promo-desc">
+                    <p class="promo-desc__title">sunglasses <br> that you`ll never take off</p>
+                    <a class="btn" href="#">browse</a>
+                </div>
+                <div class="header-promo__img"><img src="img/header-02.jpg"  alt="Фото-2"></div>
+        
+                <div class="header-promo__img-after"><img src="img/header-03.jpg"  alt="Фото-3"></div>
             </div>
-            <div class="img promo--margin"><img src="img/header-02.jpg"  alt="Фото-2"></div>
-            <div class="img"><img src="img/header-03.jpg" alt="Фото-3"></div>
         </div>
     </header>
 
@@ -114,56 +119,64 @@
             <h2 class="title">just arrived</h2>
             <div id="products-sunglasses" class="row">
                 <div class="col-sm-4 col-md-3 mix women kids">
-                    <div data-name="Ray-Ban" class="products-card ">
+                    <div class="products-card">
+                        <div class="product-card__brand">Ray-ban</div>
                         <img src="img/sunglass-01.png" alt="Очки-01">
                         <div class="products-card__name">Marta</div>
                         <div class="products-card__price">$158</div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-3 mix kids">
-                    <div data-name="Ray-Ban" class="products-card">
+                    <div class="products-card">
+                        <div class="product-card__brand">Ray-ban</div>
                         <img src="img/sunglass-02.png" alt="Очки-02">
                         <div class="products-card__name">Serengeti</div>
                         <div class="products-card__price">$210</div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-3 mix women">
-                    <div data-name="Ray-Ban" class="products-card">
+                    <div class="products-card">
+                        <div class="product-card__brand">Ray-ban</div>
                         <img src="img/sunglass-03.png" alt="Очки-03">
                         <div class="products-card__name">Versace</div>
                         <div class="products-card__price">$167</div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-3 mix men">
-                    <div data-name="Ray-Ban" class="products-card">
+                    <div class="products-card">
+                        <div class="product-card__brand">Ray-ban</div>
                         <img src="img/sunglass-04.png" alt="Очки-04">
                         <div class="products-card__name">Emporio</div>
                         <div class="products-card__price">$204</div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-3 mix women">
-                    <div data-name="Ray-Ban" class="products-card">
+                    <div class="products-card">
+                        <div class="product-card__brand">Ray-ban</div>
                         <img src="img/sunglass-01.png" alt="Очки-01">
                         <div class="products-card__name">Marta</div>
                         <div class="products-card__price">$158</div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-3 mix kids">
-                    <div data-name="Ray-Ban" class="products-card">
+                    <div class="products-card">
+                        <div class="product-card__brand">Ray-ban</div>
                         <img src="img/sunglass-02.png" alt="Очки-02">
                         <div class="products-card__name">Serengeti</div>
                         <div class="products-card__price">$210</div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-3 mix kids">
-                    <div data-name="Ray-Ban" class="products-card">
+                    <div class="products-card">
+                        <div class="product-card__brand">Ray-ban</div>
                         <img src="img/sunglass-03.png" alt="Очки-03">
                         <div class="products-card__name">Versace</div>
                         <div class="products-card__price">$167</div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-3 mix men">
-                    <div data-name="Ray-Ban" class="products-card ">
+                    <div class="products-card ">
+                        <div class="product-card__brand">Ray-ban</div>
                         <img src="img/sunglass-04.png" alt="Очки-04">
                         <div class="products-card__name">Emporio</div>
                         <div class="products-card__price">$204</div>
@@ -242,23 +255,12 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="right-title">CONTACT US</div>
-                        <ul class="right-title__list">
-                            <li>
-                                <div class="right-title__desc">
-                                    <p><a href="tel:+44(0)1793746546">+44 (0)1793 746546</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="right-title__desc">
-                                    <p>freephone ( the UK only ) <a href="tel:08001488070">0800 148 8070</a></p>
-                                </div>
-                            </li>
-                            <li> 
-                                <div class="right-title__desc">
-                                    <p><a href="mailto:ask@sunglassesshop.com">ask@sunglassesshop.com</a></p>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="right-title__list">
+                            <p><a href="tel:+44(0)1793746546">+44 (0)1793 746546</a></p>
+                            <p >freephone ( the UK only ) <a href="tel:08001488070">0800 148 8070</a></p>
+                            <p><a href="mailto:ask@sunglassesshop.com">ask@sunglassesshop.com</a></p>
+                        </div>
+
                     <div class="right-title__text">Enter you E-mail</div>
                     <input type="text" class="right-title__input" name="email">
                     <input type="submit" class="right-title__btn" name="btn">

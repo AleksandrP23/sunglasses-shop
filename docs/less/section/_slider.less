@@ -1,15 +1,19 @@
 .slider {
     max-width: 700px;
     margin: 0 auto;
-    margin-bottom: 127px;
+    margin-bottom: 50px;
     text-align: center;
 
-    &__block {
-        max-width: 300px;
-        margin: 0 auto;
-        text-align: start;
-        position: relative;
+    @media (min-width: 768px) {
+        margin-bottom: 127px;
     }
+}
+
+.slider__block {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: start;
+    position: relative;
 }
 
 .slider__title {
