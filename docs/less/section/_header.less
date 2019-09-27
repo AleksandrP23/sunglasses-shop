@@ -252,15 +252,18 @@
 .container-promo {
 	position: relative;
     width: 320px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-
-    
 	display: flex;
     align-items: center;
 
     @media (min-width: 576px) {
         width: 100%;
+    }
+
+    @media (min-width: 1200px) {
+        height: 630px;
     }
 }
 
@@ -271,7 +274,8 @@
 
 .header-promo__img {
     width: 470px;
-	height: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .header-promo__img-before {
@@ -280,6 +284,7 @@
     display: none;
 	width: 380px;
     height: 100%;
+    overflow: hidden;
 
     @media (min-width: 1230px) {
         display: block;
@@ -292,7 +297,8 @@
 	transform: translateX(100%);
     display: none;
 	width: 380px;
-	height: 100%;
+    height: 100%;
+    overflow: hidden;
     
     @media (min-width: 1230px) {
         width: 380px;
